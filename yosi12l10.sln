@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yosi12l10", "yosi12l10.csproj", "{D019B224-543A-410A-881D-EAFA06611499}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "yosi12l10Tests", "..\yosi12l10Tests\yosi12l10Tests.csproj", "{6D9EF2BF-3351-407F-8F13-51FCA2AF44D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D019B224-543A-410A-881D-EAFA06611499}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D019B224-543A-410A-881D-EAFA06611499}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D019B224-543A-410A-881D-EAFA06611499}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D019B224-543A-410A-881D-EAFA06611499}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D9EF2BF-3351-407F-8F13-51FCA2AF44D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D9EF2BF-3351-407F-8F13-51FCA2AF44D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D9EF2BF-3351-407F-8F13-51FCA2AF44D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D9EF2BF-3351-407F-8F13-51FCA2AF44D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44D5264F-D6E9-4092-8A5A-0657B9712DB8}
+	EndGlobalSection
+EndGlobal
