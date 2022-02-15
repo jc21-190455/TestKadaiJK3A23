@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yosi12l10
 {
-    public class Kuriage
+    public class kuriage
     {
         //おそらくOK
         public static int kuriage10(int i)
