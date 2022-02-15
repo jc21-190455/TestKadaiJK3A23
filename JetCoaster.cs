@@ -10,11 +10,7 @@ namespace yosi12l10.Properties
     {
         //k:定員、g:配列、ｒ:回す回数
 
-
-
         static int i = 0;
-
-
 
         public static int ride(int k, int[] g, int r)//メイン
         {
@@ -26,10 +22,6 @@ namespace yosi12l10.Properties
                 saisyukekka += ride2(k, g);
             }
             return saisyukekka;
-
-
-
-
         }
 
 
@@ -37,33 +29,49 @@ namespace yosi12l10.Properties
 
         public static int ride2(int k, int[] g)//定員、配列
         {
+
             int kekka = 0;
 
-
-
             Boolean flg = true;
+
             while (flg)
             {
                 Console.Write(i);
-                if (kekka + g[i] > k)
+                if (g.Length == 0)
                 {
+                    kekka = 0;
                     flg = false;
-
                 }
                 else
                 {
-                    kekka += g[i];
-                    i = (i + 1) % g.Length;
-                }
+                    if (kekka + g[i] > k)
+                    {
+                        flg = false;
+                    }
+                    else
+                    {
 
+                        if (g.Length == 1)
+                        {
+                            kekka += g[i];
+                            flg = false;
+                        }
+                        else
+                        {
+                            kekka += g[i];
+                            i = (i + 1) % g.Length;
+                        }
+                    }
+                }
             }
+
 
 
 
             return kekka;
 
-        }
 
+        }
 
 
     }

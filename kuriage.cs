@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace yosi12l10
 {
-    public class kuriage
+    public class Kuriage
     {
         //おそらくOK
         public static int kuriage10(int i)
@@ -25,7 +25,7 @@ namespace yosi12l10
             {
                 double j = i;
                 i = Convert.ToInt32(Math.Floor(j / 10) * 10);
-                return 0;
+                return i;
             }
 
         }
