@@ -1,10 +1,11 @@
 ﻿
-/*using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/*
 namespace yosi12l10
 {
     public class DirectedE
@@ -89,7 +90,7 @@ int[] path = new int[8];
 
 */
 
-namespace WindowsFormsApp2
+namespace yosi12l10
 {
     public class DirectedE
     {

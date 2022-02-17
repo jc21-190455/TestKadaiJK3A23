@@ -26,6 +26,7 @@ namespace yosi12l10
                 double j = i;
                 i = Convert.ToInt32(Math.Floor(j / 10) * 10);
                 return i;
+                //return 0;
             }
 
         }
