@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -28,22 +29,23 @@ namespace yosi12l10
                 int[] searched = new int[M];
                 int[] path = new int[M];
 
-                /*
-                int N = 6;
-                int M = 8;
+*/
+/*
+int N = 6;
+int M = 8;
 
-                int[] start = new int[6];
-                int[] end = new int[6];
-                int[] edgefirst = new int[8];
-                int[] edgenext = new int[8];
-                int[] current = new int[6];
-                int[] searched = new int[8];
-                int[] path = new int[8];
-                */
+int[] start = new int[6];
+int[] end = new int[6];
+int[] edgefirst = new int[8];
+int[] edgenext = new int[8];
+int[] current = new int[6];
+int[] searched = new int[8];
+int[] path = new int[8];
+*/
 
 
 
-
+/*
                 for (int i = 1; i <= N; i++)//各点での未探索の辺の番号を初期化
                 {
                     current[i] = edgefirst[i];
@@ -85,3 +87,61 @@ namespace yosi12l10
     }
 }
 
+*/
+
+namespace WindowsFormsApp2
+{
+    public class DirectedE
+    {
+        public static int[] SEARCH(int[] edgeFirst, int[] edgeNext, int s)//メイン
+        {
+            int N = 6;
+            int M = 8;
+            int temp;
+
+
+
+            int[] start = { 0, 1, 2, 3, 1, 4, 3, 5 };
+            int[] end = { 1, 2, 3, 0, 4, 3, 5, 1 };
+            int[] current = new int[7];
+            int[] searched = new int[9];
+            int[] path = new int[8];
+
+
+
+            for (int i = 0; i < N; i++)
+            {
+                current[i] = edgeFirst[i] - 1;
+            }
+
+
+
+            int top = 0;
+            int last = M - 1;
+            int x = s - 1;
+
+
+
+            while (last >= 0)
+            {
+                if (current[x] != -1)
+                {
+                    temp = current[x];
+                    searched[top] = temp;
+                    current[x] = edgeNext[temp] - 1;
+                    x = end[temp];
+                    top++;
+                }
+                else
+                {
+                    top = top - 1;
+                    temp = searched[top];
+                    path[last] = temp + 1;
+                    x = start[temp];
+                    last--;
+                }
+            }
+            return path;
+        }
+    }
+}
